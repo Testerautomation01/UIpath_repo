@@ -1,0 +1,474 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,515" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="509,276" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="orange_url">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">http://192.168.0.131/orangehrm/symfony/web/index.php/auth/login</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="570,2501" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[orange_url]">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="536,2400" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="494,2308" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'OrangeHRM Page'" sap:VirtualizedContainerService.HintSize="452,2216" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="782bf24ddbc6942b1ef6e32cc89812c4" Selector="&lt;html app='firefox.exe' title='OrangeHRM' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="418,2070" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtUsername'" EmptyField="False" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="True" Text="dilla">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b12eb337-77bd-49f6-9aa1-aca1b288bbc3" InformativeScreenshot="926ad54db66d2785eb616ef60b7555fe" Selector="&lt;webctrl id='txtUsername' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <Sequence DisplayName="Type password" sap:VirtualizedContainerService.HintSize="376,288" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="Password" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAT/3/1K06a0mEeqeNWNNlAgAAAAACAAAAAAAQZgAAAAEAACAAAAAGL9EpA4qJwmAUlfzLR6gCsk0i9HH9474T//sZ5aQVzgAAAAAOgAAAAAIAACAAAABuvzbcCLp4ZkNDRrNdACwI4xRapPJbJ/AM1k/JE4zt5hAAAACo7xO/A7S/FPQY60oGctgkQAAAAMs99Tq/leASY7mcwXt5yP/6NdjFPLcwug8qR8PyRX0zgOqu6D/rt75Xn6gpjDvqSaPdCRYy/1ehq2NofDoLsGg=" Result="[Password]" />
+                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  txtPassword'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True" Text="[Password]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="939dbd1b-8f05-4b88-86f1-8259e6f6d166" InformativeScreenshot="4309bb3970c06ab8f27b07f149df7393" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                      </Sequence>
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  btnLogin'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="50" OffsetY="12" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54d447ed-3610-470a-95e0-d152bae79b89" InformativeScreenshot="a564506f192575edd91ebe1f44571996" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  menu_pim_viewMyDetai...'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="37" OffsetY="19" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9c20e95-7923-4ed5-b907-4a4ffdf8d421" InformativeScreenshot="96b18e01285354e0c78a8a948e8a58e7" Selector="&lt;webctrl id='menu_pim_viewMyDetails' tag='A' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  expander'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="de6e0a2a-62f3-4aa9-abf6-3d8621b92137" InformativeScreenshot="35ff06a48691d54f2acf1dd48ae257eb" Selector="&lt;webctrl aaname='Contact Details' parentid='sidenav' tag='A' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  btnSave'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="46" OffsetY="13" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b79d1bb8-d2cd-4514-891f-cfd46ef72288" InformativeScreenshot="248d8f11d40635607f8e53dd2c84b1dc" Selector="&lt;webctrl id='btnSave' tag='INPUT' type='button' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  personal_cmbMar...'" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Single">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="4">
+                            <x:String>-- Select --</x:String>
+                            <x:String>Single</x:String>
+                            <x:String>Married</x:String>
+                            <x:String>Other</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="14d82473-6b2a-4cb9-9ec0-ae588c4c96be" InformativeScreenshot="f1d17d8edc1fe529599e57daf228e984" Selector="&lt;webctrl tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'INPUT  personal_optGend...'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Check_1">
+                        <ui:Check.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6048192d-0e36-4f2a-a95d-4025c7f08e83" InformativeScreenshot="01b49e0125526721a7b744387bda72c9" Selector="&lt;webctrl id='personal_optGender_2' tag='INPUT' type='radio' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Check.Target>
+                      </ui:Check>
+                      <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  personal_cmbNat...'" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="Indonesian">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="256">
+                            <x:String>-- Select --</x:String>
+                            <x:String>Afghan</x:String>
+                            <x:String>Albanian</x:String>
+                            <x:String>Algerian</x:String>
+                            <x:String>American</x:String>
+                            <x:String>Andorran</x:String>
+                            <x:String>Angolan</x:String>
+                            <x:String>Antiguans</x:String>
+                            <x:String>Argentinean</x:String>
+                            <x:String>Armenian</x:String>
+                            <x:String>Australian</x:String>
+                            <x:String>Austrian</x:String>
+                            <x:String>Azerbaijani</x:String>
+                            <x:String>Bahamian</x:String>
+                            <x:String>Bahraini</x:String>
+                            <x:String>Bangladeshi</x:String>
+                            <x:String>Barbadian</x:String>
+                            <x:String>Barbudans</x:String>
+                            <x:String>Batswana</x:String>
+                            <x:String>Belarusian</x:String>
+                            <x:String>Belgian</x:String>
+                            <x:String>Belizean</x:String>
+                            <x:String>Beninese</x:String>
+                            <x:String>Bhutanese</x:String>
+                            <x:String>Bolivian</x:String>
+                            <x:String>Bosnian</x:String>
+                            <x:String>Brazilian</x:String>
+                            <x:String>British</x:String>
+                            <x:String>Bruneian</x:String>
+                            <x:String>Bulgarian</x:String>
+                            <x:String>Burkinabe</x:String>
+                            <x:String>Burmese</x:String>
+                            <x:String>Burundian</x:String>
+                            <x:String>Cambodian</x:String>
+                            <x:String>Cameroonian</x:String>
+                            <x:String>Canadian</x:String>
+                            <x:String>Cape Verdean</x:String>
+                            <x:String>Central African</x:String>
+                            <x:String>Chadian</x:String>
+                            <x:String>Chilean</x:String>
+                            <x:String>Chinese</x:String>
+                            <x:String>Colombian</x:String>
+                            <x:String>Comoran</x:String>
+                            <x:String>Congolese</x:String>
+                            <x:String>Costa Rican</x:String>
+                            <x:String>Croatian</x:String>
+                            <x:String>Cuban</x:String>
+                            <x:String>Cypriot</x:String>
+                            <x:String>Czech</x:String>
+                            <x:String>Danish</x:String>
+                            <x:String>Djibouti</x:String>
+                            <x:String>Dominican</x:String>
+                            <x:String>Dutch</x:String>
+                            <x:String>East Timorese</x:String>
+                            <x:String>Ecuadorean</x:String>
+                            <x:String>Egyptian</x:String>
+                            <x:String>Emirian</x:String>
+                            <x:String>Equatorial Guinean</x:String>
+                            <x:String>Eritrean</x:String>
+                            <x:String>Estonian</x:String>
+                            <x:String>Ethiopian</x:String>
+                            <x:String>Fijian</x:String>
+                            <x:String>Filipino</x:String>
+                            <x:String>Finnish</x:String>
+                            <x:String>French</x:String>
+                            <x:String>Gabonese</x:String>
+                            <x:String>Gambian</x:String>
+                            <x:String>Georgian</x:String>
+                            <x:String>German</x:String>
+                            <x:String>Ghanaian</x:String>
+                            <x:String>Greek</x:String>
+                            <x:String>Grenadian</x:String>
+                            <x:String>Guatemalan</x:String>
+                            <x:String>Guinea-Bissauan</x:String>
+                            <x:String>Guinean</x:String>
+                            <x:String>Guyanese</x:String>
+                            <x:String>Haitian</x:String>
+                            <x:String>Herzegovinian</x:String>
+                            <x:String>Honduran</x:String>
+                            <x:String>Hungarian</x:String>
+                            <x:String>I-Kiribati</x:String>
+                            <x:String>Icelander</x:String>
+                            <x:String>Indian</x:String>
+                            <x:String>Indonesian</x:String>
+                            <x:String>Iranian</x:String>
+                            <x:String>Iraqi</x:String>
+                            <x:String>Irish</x:String>
+                            <x:String>Israeli</x:String>
+                            <x:String>Italian</x:String>
+                            <x:String>Ivorian</x:String>
+                            <x:String>Jamaican</x:String>
+                            <x:String>Japanese</x:String>
+                            <x:String>Jordanian</x:String>
+                            <x:String>Kazakhstani</x:String>
+                            <x:String>Kenyan</x:String>
+                            <x:String>Kittian and Nevisian</x:String>
+                            <x:String>Kuwaiti</x:String>
+                            <x:String>Kyrgyz</x:String>
+                            <x:String>Laotian</x:String>
+                            <x:String>Latvian</x:String>
+                            <x:String>Lebanese</x:String>
+                            <x:String>Liberian</x:String>
+                            <x:String>Libyan</x:String>
+                            <x:String>Liechtensteiner</x:String>
+                            <x:String>Lithuanian</x:String>
+                            <x:String>Luxembourger</x:String>
+                            <x:String>Macedonian</x:String>
+                            <x:String>Malagasy</x:String>
+                            <x:String>Malawian</x:String>
+                            <x:String>Malaysian</x:String>
+                            <x:String>Maldivan</x:String>
+                            <x:String>Malian</x:String>
+                            <x:String>Maltese</x:String>
+                            <x:String>Marshallese</x:String>
+                            <x:String>Mauritanian</x:String>
+                            <x:String>Mauritian</x:String>
+                            <x:String>Mexican</x:String>
+                            <x:String>Micronesian</x:String>
+                            <x:String>Moldovan</x:String>
+                            <x:String>Monacan</x:String>
+                            <x:String>Mongolian</x:String>
+                            <x:String>Moroccan</x:String>
+                            <x:String>Mosotho</x:String>
+                            <x:String>Motswana</x:String>
+                            <x:String>Mozambican</x:String>
+                            <x:String>Namibian</x:String>
+                            <x:String>Nauruan</x:String>
+                            <x:String>Nepalese</x:String>
+                            <x:String>New Zealander</x:String>
+                            <x:String>Nicaraguan</x:String>
+                            <x:String>Nigerian</x:String>
+                            <x:String>Nigerien</x:String>
+                            <x:String>North Korean</x:String>
+                            <x:String>Northern Irish</x:String>
+                            <x:String>Norwegian</x:String>
+                            <x:String>Omani</x:String>
+                            <x:String>Pakistani</x:String>
+                            <x:String>Palauan</x:String>
+                            <x:String>Panamanian</x:String>
+                            <x:String>Papua New Guinean</x:String>
+                            <x:String>Paraguayan</x:String>
+                            <x:String>Peruvian</x:String>
+                            <x:String>Polish</x:String>
+                            <x:String>Portuguese</x:String>
+                            <x:String>Qatari</x:String>
+                            <x:String>Romanian</x:String>
+                            <x:String>Russian</x:String>
+                            <x:String>Rwandan</x:String>
+                            <x:String>Saint Lucian</x:String>
+                            <x:String>Salvadoran</x:String>
+                            <x:String>Samoan</x:String>
+                            <x:String>San Marinese</x:String>
+                            <x:String>Sao Tomean</x:String>
+                            <x:String>Saudi</x:String>
+                            <x:String>Scottish</x:String>
+                            <x:String>Senegalese</x:String>
+                            <x:String>Serbian</x:String>
+                            <x:String>Seychellois</x:String>
+                            <x:String>Sierra Leonean</x:String>
+                            <x:String>Singaporean</x:String>
+                            <x:String>Slovakian</x:String>
+                            <x:String>Slovenian</x:String>
+                            <x:String>Solomon Islander</x:String>
+                            <x:String>Somali</x:String>
+                            <x:String>South African</x:String>
+                            <x:String>South Korean</x:String>
+                            <x:String>Spanish</x:String>
+                            <x:String>Sri Lankan</x:String>
+                            <x:String>Sudanese</x:String>
+                            <x:String>Surinamer</x:String>
+                            <x:String>Swazi</x:String>
+                            <x:String>Swedish</x:String>
+                            <x:String>Swiss</x:String>
+                            <x:String>Syrian</x:String>
+                            <x:String>Taiwanese</x:String>
+                            <x:String>Tajik</x:String>
+                            <x:String>Tanzanian</x:String>
+                            <x:String>Thai</x:String>
+                            <x:String>Togolese</x:String>
+                            <x:String>Tongan</x:String>
+                            <x:String>Trinidadian or Tobagonian</x:String>
+                            <x:String>Tunisian</x:String>
+                            <x:String>Turkish</x:String>
+                            <x:String>Tuvaluan</x:String>
+                            <x:String>Ugandan</x:String>
+                            <x:String>Ukrainian</x:String>
+                            <x:String>Uruguayan</x:String>
+                            <x:String>Uzbekistani</x:String>
+                            <x:String>Venezuelan</x:String>
+                            <x:String>Vietnamese</x:String>
+                            <x:String>Welsh</x:String>
+                            <x:String>Yemenite</x:String>
+                            <x:String>Zambian</x:String>
+                            <x:String>Zimbabwean</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="125e4b19-579f-49ba-a9db-9482635687c5" InformativeScreenshot="c3049ab3451517c4461adb413c404075" Selector="&lt;webctrl id='personal_cmbNation' tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  btnSave'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="53" OffsetY="22" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="97f5df60-9ba6-4d0c-a19d-e47d2713c9c2" InformativeScreenshot="c400f75d606de13349faa9001a0b0471" Selector="&lt;webctrl id='btnSave' tag='INPUT' type='button' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  welcome'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="108" OffsetY="7" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3cf9f028-f399-4a91-b5b1-765fd829c6ba" InformativeScreenshot="95c7aba44d39fccb5e48b8394e0b462b" Selector="&lt;webctrl id='welcome' tag='A' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /orangehrm/symfony/w...'" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="27" OffsetY="5" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="46c807a1-f53b-447a-9456-e7291c7dada2" InformativeScreenshot="b32669a7eafe2050886d5372cc386981" Selector="&lt;webctrl aaname='Logout' parentid='welcome-menu' tag='A' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
